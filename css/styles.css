@@ -1,11 +1,30 @@
-grid_container {
+body {
     display: flex;
-    width: 960px;
-    height: 960px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+control_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin: 10px;
+}
+
+grid_container {
+    flex: 1 1 auto;
+    display: flex;
+    width: 60rem;
+    height: 60rem;
     flex-wrap: wrap;
     border: 3px solid black;
 }
 
 grid_container > div {
-    flex: 1 1 auto;         
+    flex: 1 0 auto;  
+}
+
+grid_container > div:hover {
+    background-color: gray;
 }
